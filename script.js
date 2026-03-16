@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     favoriteItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
             this.style.transform = 'translateX(6px)';
-            this.style.boxShadow = '0 4px 8px rgba(25, 118, 210, 0.2)';
+            this.style.boxShadow = '0 4px 8px #FFC88B';
         });
         
         item.addEventListener('mouseleave', function() {
@@ -166,8 +166,10 @@ document.addEventListener('DOMContentLoaded', function() {
         welcomeDiv.className = 'welcome-message';
         welcomeDiv.innerHTML = `
             <div class="welcome-content">
-                <span class="material-icons">👋</span>
-                <p>¡Bienvenido a mi perfil!</p>
+                <p>¡Bienvenido a mi perfil! :)</p>
+                <i class="bi bi-envelope-open-heart"></i>
+                <i class="bi bi-feather"></i>
+                <i class="bi bi-camera"></i>
             </div>
         `;
         
@@ -176,12 +178,13 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: rgba(25, 118, 210, 0.9);
+            background: #FFC88B;
+            font-family: 'Lato', sans-serif;
             color: white;
-            padding: 12px 20px;
+            padding: 12px 25px;
             border-radius: 25px;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 700;
             z-index: 1000;
             transform: translateX(100%);
             transition: transform 0.5s ease;
